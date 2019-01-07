@@ -1,7 +1,7 @@
 <div class="mainer">
   <div class="container-fluid">
     <div class="col-md-9 col-lg-9 col-center-block content-wrap">
-      <div class="edit-post">
+      <div class="edit-post" >
         <%= simple_form_for(@artical) do |f| %>
           <%= f.error_notification %>
 
@@ -24,7 +24,11 @@
 
                 </div>
 
-                <%= f.kindeditor :content,:width => 900, :height => 600%>
+                <div id="my_form">
+                  <%= f.kindeditor :content,:width => 900, :height => 600%>
+                </div>
+
+
 
                 <div style="margin-top: 50px">
                   <%= f.button :submit, value: "发布文章" %>
@@ -46,6 +50,19 @@
     </div>
   </div>
 </div>
+<script type="text/javascript">
+    $(function(){
+        $("#my_form").reload(true)
+
+
+
+
+    })
+
+
+
+</script>
+
 
 
 

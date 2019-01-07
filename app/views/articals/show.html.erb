@@ -11,7 +11,7 @@
         <%=@artical.content %>
   </div>
 
-  <div class="article-list-item-info" style="margin-top: 50px">
+  <div class="article-list-item-info" style="margin-top: ">
     <div class="item-info-left">
       <span class> <%= User.find(@artical.user).name  %></span>
       <span class> <%=@artical.updated_at %></span>
@@ -41,8 +41,5 @@
 </div>
 
 
-
-<%= link_to 'Edit', edit_artical_path(@artical) %> |
-<%= link_to 'Back', articals_path %>
 
 

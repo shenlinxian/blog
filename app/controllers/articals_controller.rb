@@ -15,6 +15,7 @@ class ArticalsController < ApplicationController
   # GET /articals/new
   def new
     @artical = Artical.new
+
   end
 
   # GET /articals/1/edit
