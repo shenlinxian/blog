@@ -1,0 +1,100 @@
+/* color : 组件 */
+
+$submit-btn-color: #444; //提交按钮
+$submit-btn-hover-color: #666;
+$waring-color: #778899;  //错误提示
+$waring-background-color: #f5f5f5;
+$waring-border-color: 	#778899;
+$post-title-color: #555;
+$post-content-color: #666;
+$default-avatar-color: #b0c4de;
+$back-to-top-bgcolor: #464442;
+$posts-collection-leftline-color: #f5f5f5;  //文章归档边线
+$posts-collection-dot-color: #555;
+$link-normal-color: #4682B4;  // 超链接通常色
+
+
+/* color : 通用 */
+$lightblack: #444;
+$lightgray:  #7d8695 ;
+$lightwhite:   #e0e0e0;
+$loyout-color: #f5f5f5;
+$underline-color: #708090;
+$outline-input-color: #444;   //注意改变值时,要修改login.js
+$placeholder-color: #a9a9a9;
+
+/* 表单样式 */
+.form-group {
+    position: relative;
+    height: 45px;
+    margin-bottom: 10px;
+
+    /* 输入框 */
+    .form-input {
+        padding-left: 45px;
+        width: 100%;
+        height: 100%;
+        outline: none;
+        border: 1px solid $lightwhite;
+
+        &:focus {
+            border: 1px solid $outline-input-color;
+        }
+    }
+
+    .form-input-normal {
+        outline: none;
+        border: 1px solid $lightwhite;
+        box-shadow: none;
+
+        &:focus {
+            border: 1px solid $outline-input-color;
+        }
+    }
+
+    /* 小图标 */
+    .form-input + .icon {
+        position: absolute;
+        left: 0;
+        padding: 14px 18px;
+        color: $placeholder-color;
+    }
+
+    /*提交按钮*/
+    .submit {
+        //@extend .submit-btn;
+
+        height: 40px;
+        margin-top: 15px;
+        outline: none !important;
+
+        &:hover {
+            background-color: $submit-btn-hover-color;
+        }
+    }
+}
+
+/* 错误提示 */
+.form-error {
+    position: relative;
+    margin: 10px 0;
+    padding: 10px;
+    text-align: left;
+    background-color: $waring-background-color;
+    border: 1px solid $waring-border-color;
+    color: $waring-color;
+
+    .form-error-field {
+        padding-left: 30px;
+        width: 100%;
+        height: 100%;
+        font-size: 13px;
+        line-height: 1.2;
+    }
+
+    .form-error-field + .icon {
+        position: absolute;
+        left: 0;
+        padding: 13px 18px;
+    }
+}

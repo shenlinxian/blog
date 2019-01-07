@@ -1,0 +1,7 @@
+<% if @passages%>
+  <ol class="passages">
+    <%= render partial: 'shared/passages_item', collection: passages %>
+
+  </ol>
+  <%= will_paginate passages %>
+<% end %>

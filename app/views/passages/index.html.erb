@@ -1,0 +1,37 @@
+<h1>Listing passages</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Title</th>
+      <th>Content</th>
+      <th>Catagory</th>
+      <th>Read number</th>
+      <th>Thumber up number</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @passages.each do |passage| %>
+      <tr>
+        <td><%= passage.user_id %></td>
+        <td><%= passage.title %></td>
+        <td><%= passage.content %></td>
+        <td><%= passage.catagory %></td>
+        <td><%= passage.read_number %></td>
+        <td><%= passage.thumber_up_number %></td>
+        <td><%= link_to 'Show', passage %></td>
+        <td><%= link_to 'Edit', edit_passage_path(passage) %></td>
+        <td><%= link_to 'Destroy', passage, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Passage', new_passage_path %>
