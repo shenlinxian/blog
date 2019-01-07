@@ -1,4 +1,6 @@
 SampleApp::Application.routes.draw do
+  resources :articals
+
   resources :passages
 
   resources :users do

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @artical.title %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @artical.category %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @artical.content %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @artical.user %>
+</p>
+
+<p>
+  <strong>Read number:</strong>
+  <%= @artical.read_number %>
+</p>
+
+<p>
+  <strong>Thumber up number:</strong>
+  <%= @artical.thumber_up_number %>
+</p>
+
+<%= link_to 'Edit', edit_artical_path(@artical) %> |
+<%= link_to 'Back', articals_path %>

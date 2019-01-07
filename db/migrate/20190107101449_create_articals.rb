@@ -1,0 +1,14 @@
+class CreateArticals < ActiveRecord::Migration
+  def change
+    create_table :articals do |t|
+      t.string :title
+      t.string :category
+      t.string :content
+      t.integer :user
+      t.integer :read_number
+      t.integer :thumber_up_number
+
+      t.timestamps
+    end
+  end
+end

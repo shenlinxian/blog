@@ -1,0 +1,37 @@
+<h1>Listing articals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Category</th>
+      <th>Content</th>
+      <th>User</th>
+      <th>Read number</th>
+      <th>Thumber up number</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @articals.each do |artical| %>
+      <tr>
+        <td><%= artical.title %></td>
+        <td><%= artical.category %></td>
+        <td><%= artical.content %></td>
+        <td><%= artical.user %></td>
+        <td><%= artical.read_number %></td>
+        <td><%= artical.thumber_up_number %></td>
+        <td><%= link_to 'Show', artical %></td>
+        <td><%= link_to 'Edit', edit_artical_path(artical) %></td>
+        <td><%= link_to 'Destroy', artical, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Artical', new_artical_path %>
