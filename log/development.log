@@ -58533,3 +58533,4384 @@ Migrating to CreateArticals (20190107101449)
   [1m[35mSQL (0.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20190107101449"]]
   [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/articals/new" for 127.0.0.1 at 2019-01-07 18:19:46 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticalsController#new as HTML
+  [1m[35mPassage Load (0.6ms)[0m  SELECT DISTINCT catagory FROM "passages"
+  Rendered articals/_form.html.erb (251.1ms)
+  Rendered articals/new.html.erb within layouts/application (264.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (49.5ms)
+Completed 200 OK in 1230ms (Views: 1224.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/_base.css?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/component/_category_setting_modal.css?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/articals.css?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/component/_emoji_picker.css?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/component/_form.css?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/component/_markdown.css?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/component/_markdown_toolbar.css?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/passages.css?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/markdown-it.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/markdown-it-emoji.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:19:47 +0800
+
+
+Started GET "/assets/kindeditor/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:19:48 +0800
+
+
+Started GET "/assets/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:19:48 +0800
+
+
+Started GET "/assets/ajax_form.js?body=1" for 127.0.0.1 at 2019-01-07 18:19:48 +0800
+
+
+Started GET "/assets/articals.js?body=1" for 127.0.0.1 at 2019-01-07 18:19:48 +0800
+
+
+Started GET "/assets/passages.js?body=1" for 127.0.0.1 at 2019-01-07 18:19:48 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2019-01-07 18:19:48 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2019-01-07 18:19:48 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2019-01-07 18:19:48 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2019-01-07 18:19:48 +0800
+
+
+Started GET "/assets/kindeditor/themes/default/default.css" for 127.0.0.1 at 2019-01-07 18:19:48 +0800
+
+
+Started GET "/assets/kindeditor/themes/default/default.png" for 127.0.0.1 at 2019-01-07 18:19:48 +0800
+
+
+Started GET "/articals/new" for 127.0.0.1 at 2019-01-07 18:20:45 +0800
+Processing by ArticalsController#new as HTML
+  Rendered articals/_form.html.erb (32.8ms)
+  Rendered articals/new.html.erb within layouts/application (35.1ms)
+Completed 500 Internal Server Error in 43ms
+
+ActionView::Template::Error (undefined local variable or method `artical' for #<#<Class:0x00007fba9d8f77d0>:0x00007fbaa1823a80>
+Did you mean?  @artical):
+    15:                 </div>
+    16: 
+    17:                 <div class="form-group">
+    18:                   <% @all_artical=artical.select("category").distinct%>
+    19:                   <%@category_array=["选择分类"] %>
+    20:                   <% @all_artical.each do |each_artical|%>
+    21:                     <%@category_array.append(each_artical.category) %>
+  app/views/articals/_form.html.erb:18:in `block in _app_views_articals__form_html_erb__482536938005594320_70219775134940'
+  app/views/articals/_form.html.erb:5:in `_app_views_articals__form_html_erb__482536938005594320_70219775134940'
+  app/views/articals/new.html.erb:3:in `_app_views_articals_new_html_erb___1478913844445450546_70219729081900'
+
+
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (60.5ms)
+
+
+Started GET "/articals/new" for 127.0.0.1 at 2019-01-07 18:21:37 +0800
+Processing by ArticalsController#new as HTML
+  [1m[35mArtical Load (0.5ms)[0m  SELECT DISTINCT category FROM "articals"
+  Rendered articals/_form.html.erb (8.5ms)
+  Rendered articals/new.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 51ms (Views: 50.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2019-01-07 18:21:37 +0800
+
+
+Started GET "/assets/_base.css?body=1" for 127.0.0.1 at 2019-01-07 18:21:37 +0800
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2019-01-07 18:21:37 +0800
+
+
+Started GET "/assets/component/_emoji_picker.css?body=1" for 127.0.0.1 at 2019-01-07 18:21:37 +0800
+
+
+Started GET "/assets/component/_category_setting_modal.css?body=1" for 127.0.0.1 at 2019-01-07 18:21:37 +0800
+
+
+Started GET "/assets/articals.css?body=1" for 127.0.0.1 at 2019-01-07 18:21:37 +0800
+
+
+Started GET "/assets/component/_form.css?body=1" for 127.0.0.1 at 2019-01-07 18:21:37 +0800
+
+
+Started GET "/assets/component/_markdown.css?body=1" for 127.0.0.1 at 2019-01-07 18:21:37 +0800
+
+
+Started GET "/assets/component/_markdown_toolbar.css?body=1" for 127.0.0.1 at 2019-01-07 18:21:37 +0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2019-01-07 18:21:37 +0800
+
+
+Started GET "/assets/passages.css?body=1" for 127.0.0.1 at 2019-01-07 18:21:37 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2019-01-07 18:21:37 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2019-01-07 18:21:37 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2019-01-07 18:21:37 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2019-01-07 18:21:37 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:37 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:37 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:38 +0800
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:38 +0800
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:38 +0800
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:38 +0800
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:38 +0800
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:38 +0800
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:38 +0800
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:38 +0800
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:38 +0800
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:38 +0800
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:38 +0800
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:38 +0800
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:38 +0800
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:38 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:38 +0800
+
+
+Started GET "/assets/markdown-it.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:38 +0800
+
+
+Started GET "/assets/markdown-it-emoji.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:38 +0800
+
+
+Started GET "/assets/kindeditor/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:38 +0800
+
+
+Started GET "/assets/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:38 +0800
+
+
+Started GET "/assets/ajax_form.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:38 +0800
+
+
+Started GET "/assets/articals.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:38 +0800
+
+
+Started GET "/assets/passages.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:38 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:38 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:38 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:38 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:38 +0800
+
+
+Started GET "/assets/kindeditor/themes/default/default.css" for 127.0.0.1 at 2019-01-07 18:21:38 +0800
+
+
+Started GET "/assets/kindeditor/themes/default/default.png" for 127.0.0.1 at 2019-01-07 18:21:38 +0800
+
+
+Started POST "/articals" for 127.0.0.1 at 2019-01-07 18:21:57 +0800
+Processing by ArticalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BPPsN0uPH8NUaqzhxhJZ54zIe6xjVA986n5Jm8Ah2qE=", "artical"=>{"title"=>"2", "category"=>"选择分类", "content"=>"22"}, "commit"=>"发布文章"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (7.3ms)[0m  [1mINSERT INTO "articals" ("category", "content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category", "选择分类"], ["content", "22"], ["created_at", Mon, 07 Jan 2019 10:21:57 UTC +00:00], ["title", "2"], ["updated_at", Mon, 07 Jan 2019 10:21:57 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/articals/1
+Completed 302 Found in 13ms (ActiveRecord: 8.4ms)
+
+
+Started GET "/articals/1" for 127.0.0.1 at 2019-01-07 18:21:57 +0800
+Processing by ArticalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtical Load (0.2ms)[0m  [1mSELECT "articals".* FROM "articals" WHERE "articals"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered articals/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 35ms (Views: 33.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2019-01-07 18:21:57 +0800
+
+
+Started GET "/assets/_base.css?body=1" for 127.0.0.1 at 2019-01-07 18:21:57 +0800
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2019-01-07 18:21:57 +0800
+
+
+Started GET "/assets/articals.css?body=1" for 127.0.0.1 at 2019-01-07 18:21:57 +0800
+
+
+Started GET "/assets/component/_category_setting_modal.css?body=1" for 127.0.0.1 at 2019-01-07 18:21:57 +0800
+
+
+Started GET "/assets/component/_emoji_picker.css?body=1" for 127.0.0.1 at 2019-01-07 18:21:57 +0800
+
+
+Started GET "/assets/component/_form.css?body=1" for 127.0.0.1 at 2019-01-07 18:21:57 +0800
+
+
+Started GET "/assets/component/_markdown.css?body=1" for 127.0.0.1 at 2019-01-07 18:21:57 +0800
+
+
+Started GET "/assets/component/_markdown_toolbar.css?body=1" for 127.0.0.1 at 2019-01-07 18:21:57 +0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2019-01-07 18:21:57 +0800
+
+
+Started GET "/assets/passages.css?body=1" for 127.0.0.1 at 2019-01-07 18:21:57 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2019-01-07 18:21:57 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2019-01-07 18:21:57 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2019-01-07 18:21:57 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2019-01-07 18:21:57 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:57 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:57 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:57 +0800
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:57 +0800
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:57 +0800
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:57 +0800
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:57 +0800
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:57 +0800
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:57 +0800
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:57 +0800
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:57 +0800
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:57 +0800
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:57 +0800
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:57 +0800
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:58 +0800
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:58 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:58 +0800
+
+
+Started GET "/assets/markdown-it.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:58 +0800
+
+
+Started GET "/assets/kindeditor/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:58 +0800
+
+
+Started GET "/assets/markdown-it-emoji.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:58 +0800
+
+
+Started GET "/assets/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:58 +0800
+
+
+Started GET "/assets/ajax_form.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:58 +0800
+
+
+Started GET "/assets/articals.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:58 +0800
+
+
+Started GET "/assets/passages.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:58 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:58 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:58 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:58 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2019-01-07 18:21:58 +0800
+
+
+Started GET "/articals/1" for 127.0.0.1 at 2019-01-07 18:22:14 +0800
+Processing by ArticalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtical Load (0.1ms)[0m  [1mSELECT "articals".* FROM "articals" WHERE "articals"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered articals/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:14 +0800
+
+
+Started GET "/assets/component/_emoji_picker.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:14 +0800
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:14 +0800
+
+
+Started GET "/assets/component/_category_setting_modal.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/articals.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/_base.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/component/_form.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/component/_markdown.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/component/_markdown_toolbar.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/passages.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/markdown-it.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/markdown-it-emoji.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/kindeditor/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/ajax_form.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/articals.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/passages.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:15 +0800
+
+
+Started GET "/articals/1" for 127.0.0.1 at 2019-01-07 18:22:16 +0800
+Processing by ArticalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtical Load (0.1ms)[0m  [1mSELECT "articals".* FROM "articals" WHERE "articals"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered articals/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/articals.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/_base.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/component/_category_setting_modal.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/component/_emoji_picker.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/component/_form.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/component/_markdown.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/component/_markdown_toolbar.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/passages.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/markdown-it.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/markdown-it-emoji.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/kindeditor/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/ajax_form.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/articals.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/passages.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:17 +0800
+
+
+Started GET "/articals/1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+Processing by ArticalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtical Load (0.1ms)[0m  [1mSELECT "articals".* FROM "articals" WHERE "articals"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered articals/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/_base.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/articals.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/component/_category_setting_modal.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/component/_emoji_picker.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/component/_form.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/component/_markdown.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/component/_markdown_toolbar.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/passages.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/markdown-it.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/markdown-it-emoji.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/kindeditor/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/ajax_form.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/articals.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/passages.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:27 +0800
+
+
+Started GET "/articals/1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+Processing by ArticalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtical Load (0.1ms)[0m  [1mSELECT "articals".* FROM "articals" WHERE "articals"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered articals/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/_base.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/component/_category_setting_modal.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/articals.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/component/_emoji_picker.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/component/_form.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/component/_markdown.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/component/_markdown_toolbar.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/passages.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/markdown-it.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/markdown-it-emoji.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/kindeditor/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/ajax_form.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/articals.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/passages.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:35 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:22:36 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1
+  Rendered static_pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 38ms (Views: 36.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:22:38 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1[0m
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:22:40 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:22:41 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1[0m
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 33ms (Views: 32.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:22:41 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:22:42 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1[0m
+  Rendered static_pages/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:42 +0800
+
+
+Started GET "/assets/_base.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:42 +0800
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:42 +0800
+
+
+Started GET "/assets/articals.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/component/_emoji_picker.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/component/_category_setting_modal.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/component/_form.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/component/_markdown.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/component/_markdown_toolbar.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/passages.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/markdown-it.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/markdown-it-emoji.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/kindeditor/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/ajax_form.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/articals.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/passages.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+
+
+Started GET "/articals/1" for 127.0.0.1 at 2019-01-07 18:22:43 +0800
+Processing by ArticalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtical Load (0.1ms)[0m  [1mSELECT "articals".* FROM "articals" WHERE "articals"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered articals/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2019-01-07 18:22:46 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 2]]
+  Rendered shared/_stats.html.erb (36.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1
+  [1m[36mPassage Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "passages" WHERE "passages"."user_id" = ? LIMIT 1[0m  [["user_id", 2]]
+  Rendered users/show.html.erb within layouts/application (43.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 109ms (Views: 78.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/articals/new" for 127.0.0.1 at 2019-01-07 18:22:49 +0800
+Processing by ArticalsController#new as HTML
+  [1m[36mArtical Load (0.2ms)[0m  [1mSELECT DISTINCT category FROM "articals"[0m
+  Rendered articals/_form.html.erb (6.9ms)
+  Rendered articals/new.html.erb within layouts/application (11.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 48ms (Views: 47.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:22:50 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1
+  Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articals/1" for 127.0.0.1 at 2019-01-07 18:22:52 +0800
+Processing by ArticalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArtical Load (0.1ms)[0m  SELECT "articals".* FROM "articals" WHERE "articals"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered articals/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:22:56 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1[0m
+  Rendered static_pages/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 36ms (Views: 35.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2019-01-07 18:23:02 +0800
+
+
+Started GET "/assets/_base.css?body=1" for 127.0.0.1 at 2019-01-07 18:23:02 +0800
+
+
+Started GET "/assets/component/_category_setting_modal.css?body=1" for 127.0.0.1 at 2019-01-07 18:23:02 +0800
+
+
+Started GET "/assets/component/_emoji_picker.css?body=1" for 127.0.0.1 at 2019-01-07 18:23:02 +0800
+
+
+Started GET "/assets/articals.css?body=1" for 127.0.0.1 at 2019-01-07 18:23:02 +0800
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2019-01-07 18:23:02 +0800
+
+
+Started GET "/assets/component/_form.css?body=1" for 127.0.0.1 at 2019-01-07 18:23:02 +0800
+
+
+Started GET "/assets/component/_markdown.css?body=1" for 127.0.0.1 at 2019-01-07 18:23:02 +0800
+
+
+Started GET "/assets/component/_markdown_toolbar.css?body=1" for 127.0.0.1 at 2019-01-07 18:23:02 +0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2019-01-07 18:23:02 +0800
+
+
+Started GET "/assets/passages.css?body=1" for 127.0.0.1 at 2019-01-07 18:23:02 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2019-01-07 18:23:02 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2019-01-07 18:23:02 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2019-01-07 18:23:02 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2019-01-07 18:23:02 +0800
+
+
+Started GET "/articals/1" for 127.0.0.1 at 2019-01-07 18:23:06 +0800
+Processing by ArticalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtical Load (0.1ms)[0m  [1mSELECT "articals".* FROM "articals" WHERE "articals"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered articals/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 42ms (Views: 40.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1
+  Rendered static_pages/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/_base.css?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/articals.css?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/component/_emoji_picker.css?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/component/_category_setting_modal.css?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/component/_form.css?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/component/_markdown.css?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/component/_markdown_toolbar.css?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/passages.css?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/markdown-it.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/markdown-it-emoji.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/kindeditor/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/ajax_form.js?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/articals.js?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/passages.js?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2019-01-07 18:23:10 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1[0m
+  Rendered static_pages/home.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 32ms (Views: 31.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/_base.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/component/_category_setting_modal.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/articals.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/component/_emoji_picker.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/component/_form.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/component/_markdown.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/component/_markdown_toolbar.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/passages.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/markdown-it.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/markdown-it-emoji.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/kindeditor/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/ajax_form.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/articals.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/passages.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:04 +0800
+
+
+Started GET "/signin" for 127.0.0.1 at 2019-01-07 18:24:15 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'eb3562751405649af96e6fdb43e8b2c12f270706' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 43ms (Views: 42.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BPPsN0uPH8NUaqzhxhJZ54zIe6xjVA986n5Jm8Ah2qE=", "session"=>{"email"=>"8738968700@qq.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = '8738968700@qq.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  UPDATE "users" SET "remember_token" = ?, "updated_at" = ? WHERE "users"."id" = 2  [["remember_token", "d2323fac57ac755bb60ed66baa24cfb987aea378"], ["updated_at", Mon, 07 Jan 2019 10:24:17 UTC +00:00]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/users/2
+Completed 302 Found in 80ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?  [["followed_id", 2]]
+  Rendered shared/_stats.html.erb (2.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1[0m
+  Rendered users/_follow_form.html.erb (0.6ms)
+  [1m[35mPassage Exists (0.1ms)[0m  SELECT 1 AS one FROM "passages" WHERE "passages"."user_id" = ? LIMIT 1  [["user_id", 2]]
+  Rendered users/show.html.erb within layouts/application (10.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/_base.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/articals.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/component/_category_setting_modal.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/component/_emoji_picker.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/component/_form.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/component/_markdown.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/component/_markdown_toolbar.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/passages.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/markdown-it.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/markdown-it-emoji.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/kindeditor/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/ajax_form.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/articals.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/passages.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:17 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:24:19 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1[0m
+  [1m[35mPassage Load (0.2ms)[0m  SELECT "passages".* FROM "passages"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered static_pages/home.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 39ms (Views: 37.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at 2019-01-07 18:24:19 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1
+  [1m[36mPassage Load (0.2ms)[0m  [1mSELECT "passages".* FROM "passages"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered static_pages/home.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 43ms (Views: 41.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/_base.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/articals.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/component/_category_setting_modal.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/component/_emoji_picker.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/component/_form.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/component/_markdown.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/component/_markdown_toolbar.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/passages.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/markdown-it.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/markdown-it-emoji.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/kindeditor/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/ajax_form.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/articals.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/passages.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2019-01-07 18:24:22 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:24:53 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1[0m
+  Rendered static_pages/home.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    4:     <div  class="span8">
+    5:       <h3 style="text-align: center;">BBCS</h3>
+    6:       <div class="tab-pane fade show article-list active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+    7:         <%@articals.each do |each_artical| %>
+    8:           <div class="article-list-item">
+    9:             <div class="list-item-title">
+   10:               <p class="article-list-item-txt">
+  app/views/static_pages/home.html.erb:7:in `_app_views_static_pages_home_html_erb___511958103569478079_70219728265140'
+
+
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (55.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1
+  [1m[36mPassage Load (0.2ms)[0m  [1mSELECT "passages".* FROM "passages"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered static_pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/_base.css?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/articals.css?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/component/_emoji_picker.css?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/component/_category_setting_modal.css?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/component/_form.css?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/component/_markdown.css?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/component/_markdown_toolbar.css?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/passages.css?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/markdown-it.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/markdown-it-emoji.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/kindeditor/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/articals.js?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/ajax_form.js?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/passages.js?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2019-01-07 18:25:11 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:26:36 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1[0m
+  Rendered static_pages/home.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 29ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    4:     <div  class="span8">
+    5:       <h3 style="text-align: center;">BBCS</h3>
+    6:       <div class="tab-pane fade show article-list active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+    7:         <%@articals.each do |each_artical| %>
+    8:           <div class="article-list-item">
+    9:             <div class="list-item-title">
+   10:               <p class="article-list-item-txt">
+  app/views/static_pages/home.html.erb:7:in `_app_views_static_pages_home_html_erb___511958103569478079_70219793134020'
+
+
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (55.2ms)
+
+
+Started GET "/passages" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+Processing by PassagesController#index as HTML
+  [1m[35mPassage Load (0.4ms)[0m  SELECT "passages".* FROM "passages"
+  Rendered passages/index.html.erb within layouts/application (11.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.7ms)
+Completed 200 OK in 60ms (Views: 56.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/_base.css?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/component/_category_setting_modal.css?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/articals.css?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/component/_emoji_picker.css?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/component/_form.css?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/component/_markdown.css?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/component/_markdown_toolbar.css?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/passages.css?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/markdown-it.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/markdown-it-emoji.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/kindeditor/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/ajax_form.js?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/articals.js?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/passages.js?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2019-01-07 18:27:55 +0800
+
+
+Started GET "/acticals" for 127.0.0.1 at 2019-01-07 18:28:06 +0800
+
+ActionController::RoutingError (No route matches [GET] "/acticals"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/webrick/server.rb:314:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.5ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (102.8ms)
+
+
+Started GET "/arcticals" for 127.0.0.1 at 2019-01-07 18:28:33 +0800
+
+ActionController::RoutingError (No route matches [GET] "/arcticals"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/webrick/server.rb:314:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.9ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (91.9ms)
+
+
+Started GET "/articals" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+Processing by ArticalsController#index as HTML
+  [1m[35mArtical Load (0.4ms)[0m  SELECT "articals".* FROM "articals"
+  Rendered articals/index.html.erb within layouts/application (9.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (5.0ms)
+Completed 200 OK in 77ms (Views: 73.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/_base.css?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/component/_category_setting_modal.css?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/component/_emoji_picker.css?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/articals.css?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/component/_form.css?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/component/_markdown.css?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/component/_markdown_toolbar.css?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/passages.css?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/markdown-it.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/markdown-it-emoji.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/kindeditor/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/ajax_form.js?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/articals.js?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/passages.js?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2019-01-07 18:28:42 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:30:25 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1
+  Rendered static_pages/home.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    4:     <div  class="span8">
+    5:       <h3 style="text-align: center;">BBCS</h3>
+    6:       <div class="tab-pane fade show article-list active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+    7:         <%@articals.each do |each_artical| %>
+    8:           <div class="article-list-item">
+    9:             <div class="list-item-title">
+   10:               <p class="article-list-item-txt">
+  app/views/static_pages/home.html.erb:7:in `_app_views_static_pages_home_html_erb___511958103569478079_70219793134020'
+
+
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (57.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:30:26 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1[0m
+  Rendered static_pages/home.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    4:     <div  class="span8">
+    5:       <h3 style="text-align: center;">BBCS</h3>
+    6:       <div class="tab-pane fade show article-list active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+    7:         <%@articals.each do |each_artical| %>
+    8:           <div class="article-list-item">
+    9:             <div class="list-item-title">
+   10:               <p class="article-list-item-txt">
+  app/views/static_pages/home.html.erb:7:in `_app_views_static_pages_home_html_erb___511958103569478079_70219793134020'
+
+
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (55.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:30:26 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1
+  Rendered static_pages/home.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    4:     <div  class="span8">
+    5:       <h3 style="text-align: center;">BBCS</h3>
+    6:       <div class="tab-pane fade show article-list active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+    7:         <%@articals.each do |each_artical| %>
+    8:           <div class="article-list-item">
+    9:             <div class="list-item-title">
+   10:               <p class="article-list-item-txt">
+  app/views/static_pages/home.html.erb:7:in `_app_views_static_pages_home_html_erb___511958103569478079_70219793134020'
+
+
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (59.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:30:27 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1[0m
+  Rendered static_pages/home.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    4:     <div  class="span8">
+    5:       <h3 style="text-align: center;">BBCS</h3>
+    6:       <div class="tab-pane fade show article-list active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+    7:         <%@articals.each do |each_artical| %>
+    8:           <div class="article-list-item">
+    9:             <div class="list-item-title">
+   10:               <p class="article-list-item-txt">
+  app/views/static_pages/home.html.erb:7:in `_app_views_static_pages_home_html_erb___511958103569478079_70219793134020'
+
+
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (59.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:30:31 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1
+  Rendered static_pages/home.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    4:     <div  class="span8">
+    5:       <h3 style="text-align: center;">BBCS</h3>
+    6:       <div class="tab-pane fade show article-list active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+    7:         <%@articals.each do |each_artical| %>
+    8:           <div class="article-list-item">
+    9:             <div class="list-item-title">
+   10:               <p class="article-list-item-txt">
+  app/views/static_pages/home.html.erb:7:in `_app_views_static_pages_home_html_erb___511958103569478079_70219793134020'
+
+
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (55.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:30:46 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1[0m
+  Rendered static_pages/home.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    4:     <div  class="span8">
+    5:       <h3 style="text-align: center;">BBCS</h3>
+    6:       <div class="tab-pane fade show article-list active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+    7:         <%@articals.each do |each_artical| %>
+    8:           <div class="article-list-item">
+    9:             <div class="list-item-title">
+   10:               <p class="article-list-item-txt">
+  app/views/static_pages/home.html.erb:7:in `_app_views_static_pages_home_html_erb___511958103569478079_70219793134020'
+
+
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (57.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:30:46 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1
+  Rendered static_pages/home.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    4:     <div  class="span8">
+    5:       <h3 style="text-align: center;">BBCS</h3>
+    6:       <div class="tab-pane fade show article-list active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+    7:         <%@articals.each do |each_artical| %>
+    8:           <div class="article-list-item">
+    9:             <div class="list-item-title">
+   10:               <p class="article-list-item-txt">
+  app/views/static_pages/home.html.erb:7:in `_app_views_static_pages_home_html_erb___511958103569478079_70219793134020'
+
+
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (53.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:30:47 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1[0m
+  Rendered static_pages/home.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    4:     <div  class="span8">
+    5:       <h3 style="text-align: center;">BBCS</h3>
+    6:       <div class="tab-pane fade show article-list active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+    7:         <%@articals.each do |each_artical| %>
+    8:           <div class="article-list-item">
+    9:             <div class="list-item-title">
+   10:               <p class="article-list-item-txt">
+  app/views/static_pages/home.html.erb:7:in `_app_views_static_pages_home_html_erb___511958103569478079_70219793134020'
+
+
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (52.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:30:47 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1
+  Rendered static_pages/home.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    4:     <div  class="span8">
+    5:       <h3 style="text-align: center;">BBCS</h3>
+    6:       <div class="tab-pane fade show article-list active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+    7:         <%@articals.each do |each_artical| %>
+    8:           <div class="article-list-item">
+    9:             <div class="list-item-title">
+   10:               <p class="article-list-item-txt">
+  app/views/static_pages/home.html.erb:7:in `_app_views_static_pages_home_html_erb___511958103569478079_70219793134020'
+
+
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (55.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:31:14 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1[0m
+  Rendered static_pages/home.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     5:     <div  class="span8">
+     6:       <h3 style="text-align: center;">BBCS</h3>
+     7:       <div class="tab-pane fade show article-list active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+     8:         <%@passages.each do |each_passage| %>
+     9:           <div class="article-list-item">
+    10:             <div class="list-item-title">
+    11:               <p class="article-list-item-txt">
+  app/views/static_pages/home.html.erb:8:in `_app_views_static_pages_home_html_erb___511958103569478079_70219796824120'
+
+
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (55.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:31:15 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1
+  Rendered static_pages/home.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     5:     <div  class="span8">
+     6:       <h3 style="text-align: center;">BBCS</h3>
+     7:       <div class="tab-pane fade show article-list active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+     8:         <%@passages.each do |each_passage| %>
+     9:           <div class="article-list-item">
+    10:             <div class="list-item-title">
+    11:               <p class="article-list-item-txt">
+  app/views/static_pages/home.html.erb:8:in `_app_views_static_pages_home_html_erb___511958103569478079_70219796824120'
+
+
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (56.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:31:15 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1[0m
+  Rendered static_pages/home.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     5:     <div  class="span8">
+     6:       <h3 style="text-align: center;">BBCS</h3>
+     7:       <div class="tab-pane fade show article-list active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+     8:         <%@passages.each do |each_passage| %>
+     9:           <div class="article-list-item">
+    10:             <div class="list-item-title">
+    11:               <p class="article-list-item-txt">
+  app/views/static_pages/home.html.erb:8:in `_app_views_static_pages_home_html_erb___511958103569478079_70219796824120'
+
+
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (63.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:31:16 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1
+  Rendered static_pages/home.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     5:     <div  class="span8">
+     6:       <h3 style="text-align: center;">BBCS</h3>
+     7:       <div class="tab-pane fade show article-list active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+     8:         <%@passages.each do |each_passage| %>
+     9:           <div class="article-list-item">
+    10:             <div class="list-item-title">
+    11:               <p class="article-list-item-txt">
+  app/views/static_pages/home.html.erb:8:in `_app_views_static_pages_home_html_erb___511958103569478079_70219796824120'
+
+
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (52.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:31:16 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1[0m
+  Rendered static_pages/home.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     5:     <div  class="span8">
+     6:       <h3 style="text-align: center;">BBCS</h3>
+     7:       <div class="tab-pane fade show article-list active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+     8:         <%@passages.each do |each_passage| %>
+     9:           <div class="article-list-item">
+    10:             <div class="list-item-title">
+    11:               <p class="article-list-item-txt">
+  app/views/static_pages/home.html.erb:8:in `_app_views_static_pages_home_html_erb___511958103569478079_70219796824120'
+
+
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (57.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:31:16 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1
+  Rendered static_pages/home.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     5:     <div  class="span8">
+     6:       <h3 style="text-align: center;">BBCS</h3>
+     7:       <div class="tab-pane fade show article-list active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+     8:         <%@passages.each do |each_passage| %>
+     9:           <div class="article-list-item">
+    10:             <div class="list-item-title">
+    11:               <p class="article-list-item-txt">
+  app/views/static_pages/home.html.erb:8:in `_app_views_static_pages_home_html_erb___511958103569478079_70219796824120'
+
+
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (60.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:31:18 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1[0m
+  Rendered static_pages/home.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     5:     <div  class="span8">
+     6:       <h3 style="text-align: center;">BBCS</h3>
+     7:       <div class="tab-pane fade show article-list active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+     8:         <%@passages.each do |each_passage| %>
+     9:           <div class="article-list-item">
+    10:             <div class="list-item-title">
+    11:               <p class="article-list-item-txt">
+  app/views/static_pages/home.html.erb:8:in `_app_views_static_pages_home_html_erb___511958103569478079_70219796824120'
+
+
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (52.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:31:18 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1
+  Rendered static_pages/home.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     5:     <div  class="span8">
+     6:       <h3 style="text-align: center;">BBCS</h3>
+     7:       <div class="tab-pane fade show article-list active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+     8:         <%@passages.each do |each_passage| %>
+     9:           <div class="article-list-item">
+    10:             <div class="list-item-title">
+    11:               <p class="article-list-item-txt">
+  app/views/static_pages/home.html.erb:8:in `_app_views_static_pages_home_html_erb___511958103569478079_70219796824120'
+
+
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (52.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:31:18 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1[0m
+  Rendered static_pages/home.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     5:     <div  class="span8">
+     6:       <h3 style="text-align: center;">BBCS</h3>
+     7:       <div class="tab-pane fade show article-list active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+     8:         <%@passages.each do |each_passage| %>
+     9:           <div class="article-list-item">
+    10:             <div class="list-item-title">
+    11:               <p class="article-list-item-txt">
+  app/views/static_pages/home.html.erb:8:in `_app_views_static_pages_home_html_erb___511958103569478079_70219796824120'
+
+
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (52.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:31:18 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1
+  Rendered static_pages/home.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     5:     <div  class="span8">
+     6:       <h3 style="text-align: center;">BBCS</h3>
+     7:       <div class="tab-pane fade show article-list active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+     8:         <%@passages.each do |each_passage| %>
+     9:           <div class="article-list-item">
+    10:             <div class="list-item-title">
+    11:               <p class="article-list-item-txt">
+  app/views/static_pages/home.html.erb:8:in `_app_views_static_pages_home_html_erb___511958103569478079_70219796824120'
+
+
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (55.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:31:18 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1[0m
+  Rendered static_pages/home.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     5:     <div  class="span8">
+     6:       <h3 style="text-align: center;">BBCS</h3>
+     7:       <div class="tab-pane fade show article-list active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+     8:         <%@passages.each do |each_passage| %>
+     9:           <div class="article-list-item">
+    10:             <div class="list-item-title">
+    11:               <p class="article-list-item-txt">
+  app/views/static_pages/home.html.erb:8:in `_app_views_static_pages_home_html_erb___511958103569478079_70219796824120'
+
+
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (56.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:31:20 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1
+  Rendered static_pages/home.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     5:     <div  class="span8">
+     6:       <h3 style="text-align: center;">BBCS</h3>
+     7:       <div class="tab-pane fade show article-list active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+     8:         <%@passages.each do |each_passage| %>
+     9:           <div class="article-list-item">
+    10:             <div class="list-item-title">
+    11:               <p class="article-list-item-txt">
+  app/views/static_pages/home.html.erb:8:in `_app_views_static_pages_home_html_erb___511958103569478079_70219796824120'
+
+
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (55.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:31:20 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1[0m
+  Rendered static_pages/home.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     5:     <div  class="span8">
+     6:       <h3 style="text-align: center;">BBCS</h3>
+     7:       <div class="tab-pane fade show article-list active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+     8:         <%@passages.each do |each_passage| %>
+     9:           <div class="article-list-item">
+    10:             <div class="list-item-title">
+    11:               <p class="article-list-item-txt">
+  app/views/static_pages/home.html.erb:8:in `_app_views_static_pages_home_html_erb___511958103569478079_70219796824120'
+
+
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (62.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:31:20 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1
+  Rendered static_pages/home.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     5:     <div  class="span8">
+     6:       <h3 style="text-align: center;">BBCS</h3>
+     7:       <div class="tab-pane fade show article-list active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+     8:         <%@passages.each do |each_passage| %>
+     9:           <div class="article-list-item">
+    10:             <div class="list-item-title">
+    11:               <p class="article-list-item-txt">
+  app/views/static_pages/home.html.erb:8:in `_app_views_static_pages_home_html_erb___511958103569478079_70219796824120'
+
+
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (55.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:32:06 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1[0m
+  [1m[35mArtical Load (0.2ms)[0m  SELECT "articals".* FROM "articals"
+  Rendered static_pages/home.html.erb within layouts/application (14.7ms)
+Completed 500 Internal Server Error in 38ms
+
+ActionView::Template::Error (undefined method `user_id' for #<Artical:0x00007fba9cd0a760>
+Did you mean?  user):
+    15: 
+    16:             <div class="article-list-item-info">
+    17:               <div class="item-info-left">
+    18:                 <span class> <%= User.find(each_artical.user_id).name  %></span>
+    19:                 <span class> <%=each_artical.updated_at %></span>
+    20:                 <span class>
+    21:                   <svg class="icon icon-read">
+  app/views/static_pages/home.html.erb:18:in `block in _app_views_static_pages_home_html_erb___511958103569478079_70219736375880'
+  app/views/static_pages/home.html.erb:8:in `_app_views_static_pages_home_html_erb___511958103569478079_70219736375880'
+
+
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (52.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:32:27 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1[0m
+  [1m[35mArtical Load (0.2ms)[0m  SELECT "articals".* FROM "articals"
+  Rendered static_pages/home.html.erb within layouts/application (8.9ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (undefined method `user_id' for #<Artical:0x00007fba9bd9c788>
+Did you mean?  user):
+    15: 
+    16:             <div class="article-list-item-info">
+    17:               <div class="item-info-left">
+    18:                 <span class> <%= User.find(each_artical.user_id).name  %></span>
+    19:                 <span class> <%=each_artical.updated_at %></span>
+    20:                 <span class>
+    21:                   <svg class="icon icon-read">
+  app/views/static_pages/home.html.erb:18:in `block in _app_views_static_pages_home_html_erb___511958103569478079_70219736375880'
+  app/views/static_pages/home.html.erb:8:in `_app_views_static_pages_home_html_erb___511958103569478079_70219736375880'
+
+
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (55.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:32:38 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1[0m
+  [1m[35mArtical Load (0.6ms)[0m  SELECT "articals".* FROM "articals"
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered static_pages/home.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 55ms (Views: 52.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2019-01-07 18:32:38 +0800
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2019-01-07 18:32:38 +0800
+
+
+Started GET "/assets/articals.css?body=1" for 127.0.0.1 at 2019-01-07 18:32:38 +0800
+
+
+Started GET "/assets/_base.css?body=1" for 127.0.0.1 at 2019-01-07 18:32:38 +0800
+
+
+Started GET "/assets/component/_emoji_picker.css?body=1" for 127.0.0.1 at 2019-01-07 18:32:38 +0800
+
+
+Started GET "/assets/component/_category_setting_modal.css?body=1" for 127.0.0.1 at 2019-01-07 18:32:38 +0800
+
+
+Started GET "/assets/component/_form.css?body=1" for 127.0.0.1 at 2019-01-07 18:32:38 +0800
+
+
+Started GET "/assets/component/_markdown.css?body=1" for 127.0.0.1 at 2019-01-07 18:32:38 +0800
+
+
+Started GET "/assets/component/_markdown_toolbar.css?body=1" for 127.0.0.1 at 2019-01-07 18:32:38 +0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2019-01-07 18:32:38 +0800
+
+
+Started GET "/assets/passages.css?body=1" for 127.0.0.1 at 2019-01-07 18:32:38 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2019-01-07 18:32:38 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2019-01-07 18:32:38 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2019-01-07 18:32:38 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2019-01-07 18:32:38 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2019-01-07 18:32:38 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2019-01-07 18:32:38 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2019-01-07 18:32:38 +0800
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2019-01-07 18:32:38 +0800
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2019-01-07 18:32:38 +0800
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2019-01-07 18:32:38 +0800
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2019-01-07 18:32:39 +0800
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2019-01-07 18:32:39 +0800
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2019-01-07 18:32:39 +0800
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2019-01-07 18:32:39 +0800
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2019-01-07 18:32:39 +0800
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2019-01-07 18:32:39 +0800
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2019-01-07 18:32:39 +0800
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2019-01-07 18:32:39 +0800
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2019-01-07 18:32:39 +0800
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2019-01-07 18:32:39 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2019-01-07 18:32:39 +0800
+
+
+Started GET "/assets/markdown-it.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:32:39 +0800
+
+
+Started GET "/assets/markdown-it-emoji.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:32:39 +0800
+
+
+Started GET "/assets/kindeditor/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:32:39 +0800
+
+
+Started GET "/assets/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:32:39 +0800
+
+
+Started GET "/assets/ajax_form.js?body=1" for 127.0.0.1 at 2019-01-07 18:32:39 +0800
+
+
+Started GET "/assets/articals.js?body=1" for 127.0.0.1 at 2019-01-07 18:32:39 +0800
+
+
+Started GET "/assets/passages.js?body=1" for 127.0.0.1 at 2019-01-07 18:32:39 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2019-01-07 18:32:39 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2019-01-07 18:32:39 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2019-01-07 18:32:39 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2019-01-07 18:32:39 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1
+  [1m[36mArtical Load (0.2ms)[0m  [1mSELECT "articals".* FROM "articals"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered static_pages/home.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/_base.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/articals.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/component/_category_setting_modal.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/component/_emoji_picker.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/component/_form.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/component/_markdown.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/component/_markdown_toolbar.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/passages.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/markdown-it.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/markdown-it-emoji.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/kindeditor/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/ajax_form.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/articals.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/passages.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:08 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1[0m
+  [1m[35mArtical Load (0.2ms)[0m  SELECT "articals".* FROM "articals"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered static_pages/home.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/_base.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/component/_category_setting_modal.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/articals.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/component/_emoji_picker.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/component/_form.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/component/_markdown.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/component/_markdown_toolbar.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/passages.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/markdown-it.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/markdown-it-emoji.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/kindeditor/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/ajax_form.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/articals.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/passages.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:09 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1
+  [1m[36mArtical Load (0.2ms)[0m  [1mSELECT "articals".* FROM "articals"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered static_pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 40ms (Views: 38.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/articals.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/_base.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/component/_category_setting_modal.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/component/_emoji_picker.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/component/_form.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/component/_markdown.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/component/_markdown_toolbar.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/passages.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/markdown-it.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/markdown-it-emoji.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/kindeditor/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/ajax_form.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/articals.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/passages.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:13 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1[0m
+  [1m[35mArtical Load (0.2ms)[0m  SELECT "articals".* FROM "articals"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered static_pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/_base.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/component/_emoji_picker.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/component/_category_setting_modal.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/articals.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/component/_form.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/component/_markdown.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/component/_markdown_toolbar.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/passages.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/markdown-it.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/markdown-it-emoji.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/kindeditor/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/ajax_form.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/articals.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/passages.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1
+  [1m[36mArtical Load (0.2ms)[0m  [1mSELECT "articals".* FROM "articals"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered static_pages/home.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 35ms (Views: 33.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/_base.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/articals.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/component/_emoji_picker.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/component/_category_setting_modal.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/component/_form.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/component/_markdown.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/component/_markdown_toolbar.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/passages.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:15 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:16 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:16 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:16 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:16 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:16 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:16 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:16 +0800
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:16 +0800
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:16 +0800
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:16 +0800
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:16 +0800
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:16 +0800
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:16 +0800
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:16 +0800
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:16 +0800
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:16 +0800
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:16 +0800
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:16 +0800
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:16 +0800
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:16 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:16 +0800
+
+
+Started GET "/assets/markdown-it.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:16 +0800
+
+
+Started GET "/assets/markdown-it-emoji.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:16 +0800
+
+
+Started GET "/assets/kindeditor/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:16 +0800
+
+
+Started GET "/assets/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:16 +0800
+
+
+Started GET "/assets/ajax_form.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:16 +0800
+
+
+Started GET "/assets/articals.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:16 +0800
+
+
+Started GET "/assets/passages.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:16 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:16 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:16 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:16 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:16 +0800
+
+
+Started GET "/passages/new" for 127.0.0.1 at 2019-01-07 18:33:33 +0800
+Processing by PassagesController#new as HTML
+  [1m[36mPassage Load (0.2ms)[0m  [1mSELECT DISTINCT catagory FROM "passages"[0m
+  Rendered passages/new.html.erb within layouts/application (15.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 55ms (Views: 51.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/passages/new" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+Processing by PassagesController#new as HTML
+  [1m[36mPassage Load (0.3ms)[0m  [1mSELECT DISTINCT catagory FROM "passages"[0m
+  Rendered passages/new.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/_base.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/component/_emoji_picker.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/articals.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/component/_category_setting_modal.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/component/_form.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/component/_markdown.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/component/_markdown_toolbar.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/passages.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/markdown-it.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/markdown-it-emoji.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/kindeditor/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/ajax_form.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/articals.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/passages.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/kindeditor/themes/default/default.css" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/assets/kindeditor/themes/default/default.png" for 127.0.0.1 at 2019-01-07 18:33:57 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:33:59 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1[0m
+  [1m[35mArtical Load (0.2ms)[0m  SELECT "articals".* FROM "articals"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/passages/new" for 127.0.0.1 at 2019-01-07 18:34:00 +0800
+Processing by PassagesController#new as HTML
+  [1m[35mPassage Load (0.2ms)[0m  SELECT DISTINCT catagory FROM "passages"
+  Rendered passages/new.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 42ms (Views: 41.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/passages/new" for 127.0.0.1 at 2019-01-07 18:34:02 +0800
+Processing by PassagesController#new as HTML
+  [1m[35mPassage Load (0.3ms)[0m  SELECT DISTINCT catagory FROM "passages"
+  Rendered passages/new.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 40ms (Views: 38.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/passages/new" for 127.0.0.1 at 2019-01-07 18:34:06 +0800
+Processing by PassagesController#new as HTML
+  [1m[35mPassage Load (0.2ms)[0m  SELECT DISTINCT catagory FROM "passages"
+  Rendered passages/new.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/passages/new" for 127.0.0.1 at 2019-01-07 18:34:11 +0800
+Processing by PassagesController#new as HTML
+  [1m[35mPassage Load (0.2ms)[0m  SELECT DISTINCT catagory FROM "passages"
+  Rendered passages/new.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/passages/new" for 127.0.0.1 at 2019-01-07 18:34:14 +0800
+Processing by PassagesController#new as HTML
+  [1m[35mPassage Load (0.2ms)[0m  SELECT DISTINCT catagory FROM "passages"
+  Rendered passages/new.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1
+  [1m[36mArtical Load (0.2ms)[0m  [1mSELECT "articals".* FROM "articals"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered static_pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/_base.css?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/component/_category_setting_modal.css?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/component/_emoji_picker.css?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/articals.css?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/component/_form.css?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/component/_markdown.css?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/component/_markdown_toolbar.css?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/passages.css?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/markdown-it.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/markdown-it-emoji.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/kindeditor/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/ajax_form.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/articals.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/passages.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-07 18:34:18 +0800
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1[0m
+  [1m[35mArtical Load (0.2ms)[0m  SELECT "articals".* FROM "articals"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered static_pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 36ms (Views: 33.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/_base.css?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/_variables.css?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/component/_emoji_picker.css?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/articals.css?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/component/_category_setting_modal.css?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/component/_form.css?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/component/_markdown.css?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/component/_markdown_toolbar.css?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/passages.css?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/markdown-it.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/markdown-it-emoji.min.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/kindeditor/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/kindeditor.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/ajax_form.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/articals.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/passages.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2019-01-07 18:34:19 +0800
+
+
+Started GET "/passages/new" for 127.0.0.1 at 2019-01-07 18:34:20 +0800
+Processing by PassagesController#new as HTML
+  [1m[35mPassage Load (0.2ms)[0m  SELECT DISTINCT catagory FROM "passages"
+  Rendered passages/new.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'd2323fac57ac755bb60ed66baa24cfb987aea378' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 41ms (Views: 39.7ms | ActiveRecord: 0.5ms)

@@ -2,7 +2,7 @@ class StaticPagesController < ApplicationController
 
   def home
     if signed_in?
-      @passages = Passage.all
+      @articals = Artical.all
 
     end
   end

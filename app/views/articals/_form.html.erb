@@ -1,16 +1,52 @@
-<%= simple_form_for(@artical) do |f| %>
-  <%= f.error_notification %>
+<div class="mainer">
+  <div class="container-fluid">
+    <div class="col-md-9 col-lg-9 col-center-block content-wrap">
+      <div class="edit-post">
+        <%= simple_form_for(@artical) do |f| %>
+          <%= f.error_notification %>
 
-  <div class="form-inputs">
-    <%= f.input :title %>
-    <%= f.input :category %>
-    <%= f.input :content %>
-    <%= f.input :user %>
-    <%= f.input :read_number %>
-    <%= f.input :thumber_up_number %>
-  </div>
+          <div class="form-inputs">
+            <div class="edit-header">
+              <!-- 文章标题-->
+              <div class="post-title">
 
-  <div class="form-actions">
-    <%= f.button :submit %>
+                <div class="form-group">
+                  <%= f.input_field :title, class: "form-input", id: "title-input", placeholder: "标题", maxlength: "50" %>
+                </div>
+
+                <div class="form-group">
+                  <% @all_artical=Artical.select("category").distinct%>
+                  <%@category_array=["选择分类"] %>
+                  <% @all_artical.each do |each_artical|%>
+                    <%@category_array.append(each_artical.category) %>
+                  <%end %>
+                  <%= f.input_field :category, :collection => @category_array, :selected => '默认分类' %>
+
+                </div>
+
+                <%= f.kindeditor :content,:width => 900, :height => 600%>
+
+                <div style="margin-top: 50px">
+                  <%= f.button :submit, value: "发布文章" %>
+                </div>
+
+              </div>
+
+
+            </div>
+
+
+          </div>
+
+         
+        <% end %>
+
+
+      </div>
+    </div>
   </div>
-<% end %>
+</div>
+
+
+
+
