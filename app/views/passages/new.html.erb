@@ -4,7 +4,7 @@
 <div class="mainer">
   <div class="container-fluid">
     <div class="col-md-9 col-lg-9 col-center-block content-wrap">
-      <div class="edit-post">
+      <div class="edit-post" >
         <%= simple_form_for @passage, remote: true do |f| %>
           <div class="edit-header">
             <!-- 文章标题-->
@@ -21,6 +21,7 @@
             <%end %>
             <%= f.input_field :catagory, :collection => @catagory_array, :selected => '选择分类' %>
           </div>
+
           <%= f.kindeditor :content,:width => 900, :height => 600%>
 
           <div style="margin-top: 50px">
@@ -34,10 +35,4 @@
   </div>
 </div>
 
-<script type="text/javascript">
-    $(function () {
-        $("#autore").load(location.href + " #autore");//注意后面DIV的ID前面的空格，很重要！没有空格的话，会出双眼皮！（也可以使用类名）
-        
-    })
 
-</script>

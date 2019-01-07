@@ -1,34 +1,48 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @artical.title %>
-</p>
 
-<p>
-  <strong>Category:</strong>
-  <%= @artical.category %>
-</p>
+<div>
+  <div>
+    <h1> <%=@artical.title %></h1>
+  </div>
 
-<p>
-  <strong>Content:</strong>
-  <%= @artical.content %>
-</p>
 
-<p>
-  <strong>User:</strong>
-  <%= @artical.user %>
-</p>
 
-<p>
-  <strong>Read number:</strong>
-  <%= @artical.read_number %>
-</p>
+  <div style="width: 900px;margin-top: 20px">
+        <%=@artical.content %>
+  </div>
 
-<p>
-  <strong>Thumber up number:</strong>
-  <%= @artical.thumber_up_number %>
-</p>
+  <div class="article-list-item-info" style="margin-top: 50px">
+    <div class="item-info-left">
+      <span class> <%= User.find(@artical.user).name  %></span>
+      <span class> <%=@artical.updated_at %></span>
+      <span class>
+          <svg class="icon icon-read">
+            <use class="" xlink:href="#read">
+            </use>
+          </svg>
+        <%=@artical.read_number %>
+      </span>
+
+      <span class>
+        <svg class="icon icon-comment">
+          <use class="" xlink:href="#thumb_up">
+          </use>
+        </svg>
+        <%=@artical.thumber_up_number %>
+      </span>
+
+
+
+    </div>
+
+
+  </div>
+
+</div>
+
+
 
 <%= link_to 'Edit', edit_artical_path(@artical) %> |
 <%= link_to 'Back', articals_path %>
+
+
