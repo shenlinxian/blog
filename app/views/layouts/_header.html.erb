@@ -6,7 +6,7 @@
         <ul class="nav pull-right">
           <li><%= link_to "首页", root_path %></li>
 
-          <% if signed_in? %>
+          <% if logged_in? %>
             <li>
               <a href="/articals/new">写文章</a>
 
@@ -15,6 +15,7 @@
                 账户 <b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
+<!--                <a href="/articals/new">写文章</a>-->
                 <li><%= link_to "个人信息", current_user %></li>
                 <li><%= link_to "重置密码", edit_user_path(current_user) %></li>
                 <li><%= link_to "我的文章", root_path%></li>

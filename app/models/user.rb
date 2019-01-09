@@ -15,6 +15,16 @@ class User < ActiveRecord::Base
   has_secure_password
   validates :password, length: { minimum: 6 }
 
+
+
+  # 闲置图片的大小
+  validate  :picture_size
+
+  # 添加图片上传
+  mount_uploader :picture, PictureUploader
+
+
+
   def User.new_remember_token
     SecureRandom.urlsafe_base64
   end
@@ -40,6 +50,13 @@ class User < ActiveRecord::Base
   end
 
   private
+
+    # 验证上传的图片大小
+    def picture_size
+      if picture.size > 5.megabytes
+        errors.add(:picture, "should be less than 5MB")
+      end
+    end
 
     def create_remember_token
       self.remember_token = User.digest(User.new_remember_token)

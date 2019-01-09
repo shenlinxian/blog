@@ -1,10 +1,10 @@
 class StaticPagesController < ApplicationController
 
   def home
-    if signed_in?
+    if logged_in?
       @articals = Artical.all
-
     end
+
   end
 
   def help

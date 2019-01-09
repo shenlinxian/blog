@@ -1,8 +1,23 @@
-<li>
-  <%= gravatar_for user, size: 52 %>
-  <%= link_to user.name, user %>
+<!-- 显示用户列表时，每个用户的显示(个人资料链接和删除链接) -->
+ <% if not user.admin?%>
+<tr>
+  <td>
+    <%= gravatar_for user, size: 50 %>
+  </td>
+  <td>
+    <%= link_to user.name, user %>
+  </td>
+  <td>
+    <!-- 查看个人资料 -->
+    <%= link_to("查看个人资料", "/users/"+user.id.to_s)  %>
+  </td>
+  <!-- 删除用户的链接（只有管理员能看到） -->
+  
   <% if current_user.admin? && !current_user?(user) %>
-    | <%= link_to "delete", user, method: :delete,
+    <td>
+      <%= link_to "删除", user, method: :delete,
                                   data: { confirm: "You sure?" } %>
+    </td>
   <% end %>
-</li>
+</tr>
+<% end %>

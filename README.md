@@ -13,3 +13,6 @@ rake db:migrate
 rails g migration add_column_to_passages title:string
 bundle exec rake db:migrate
 
+
+
+
