@@ -222,6 +222,7 @@ GEM
       rubyzip (< 1.0.0)
       websocket (~> 1.0.4)
     shellany (0.0.1)
+    simditor (2.3.6)
     simple_form (3.1.0.rc2)
       actionpack (~> 4.0)
       activemodel (~> 4.0)
@@ -284,6 +285,7 @@ DEPENDENCIES
   sass-rails (= 4.0.1)
   sdoc (= 0.3.20)
   selenium-webdriver (= 2.35.1)
+  simditor
   simple_form
   spork-rails (= 4.0.0)
   sprockets (= 2.11.0)

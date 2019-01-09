@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190109020753) do
+ActiveRecord::Schema.define(version: 20190109070458) do
 
   create_table "_articals_old_20190107", force: true do |t|
     t.string   "title"
@@ -42,6 +42,17 @@ ActiveRecord::Schema.define(version: 20190109020753) do
     t.integer  "user"
     t.integer  "read_number",       default: 0
     t.integer  "thumber_up_number", default: 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "kindeditor_assets", force: true do |t|
+    t.string   "asset"
+    t.integer  "file_size"
+    t.string   "file_type"
+    t.integer  "owner_id"
+    t.string   "owner_type"
+    t.string   "asset_type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

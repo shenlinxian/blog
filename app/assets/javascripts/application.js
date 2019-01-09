@@ -21,4 +21,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require kindeditor
+
+//= require simditor
+//= require wangEditor.min
 //= require_tree .

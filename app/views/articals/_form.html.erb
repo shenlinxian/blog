@@ -1,3 +1,6 @@
+
+
+
 <div class="mainer">
   <div class="container-fluid">
     <div class="col-md-9 col-lg-9 col-center-block content-wrap">
@@ -24,10 +27,10 @@
 
                 </div>
 
-                <div id="my_form">
-                  <%= f.kindeditor :content,:width => 900, :height => 600%>
-                </div>
-
+<!--                <div id="my_form">-->
+                  <%#= f.kindeditor :content,:width => 900, :height => 600%>
+<!--                </div>-->
+                <%= f.text_area :content, id: :post_content, style: 'height:400px; max-height:500px;' %>
 
 
                 <div style="margin-top: 50px">
@@ -51,17 +54,13 @@
   </div>
 </div>
 <script type="text/javascript">
-    $(function(){
-        $("#my_form").reload(true)
-
-
-
-
-    })
-
+    var editor = new wangEditor('post_content');  // 用构造函数的方法，创建一个post_content, 把值传给editor. post_content 是text_area的id.
+    editor.create(); //用指定的原型对象去创建一个新的对象
 
 
 </script>
+
+
 
 
 

@@ -14,6 +14,9 @@ gem 'bootstrap-will_paginate', '0.0.9'
 
 gem "simple_form"
 gem 'motion-markdown-it'
+
+gem 'simditor'
+
 gem 'rails_kindeditor'
 
 group :development, :test do
