@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   # 只能对自己的账号进行操作
   before_action :correct_user,   only: [:edit, :update]
   # 限制只有管理员才能访问 destroy 动作。我们要定义一个名为 admin_user 的事前过滤器
-  before_action :admin_user,     only: [:destroy, :show, :search]
+  before_action :admin_user,     only: [:destroy,  :search]
 
   def new
     @user = User.new
@@ -24,11 +24,14 @@ class UsersController < ApplicationController
 
   def show
     # params[:id] 会返回用户的 ID
+    puts("...")
 
     @user = User.find(params[:id])
-    logger.debug("....")
+
+
+
     # 可以在控制台进入debug模式
-    # debugger
+    debugger
   end
 
   def create
@@ -91,7 +94,7 @@ class UsersController < ApplicationController
   def correct_user
     @user = User.find(params[:id])
     # 使用user_helper里的方法，判断已登录用户和要操作的用户是否一致
-    redirect_to(root_url) unless current_user?(@user)
+    # redirect_to(root_url) unless current_user?(@user)
   end
 
   # 确保是管理员

@@ -34,7 +34,7 @@ class SessionsController < ApplicationController
       # 调用session_helper里的redirect_back_or 方法
       # 如果存储了之前请求的地址，就重定向到那个地址，否则重定向到一个默认的地址
 
-      redirect_back_or '/home'
+      redirect_back_or '/articals'
     else
       # 创建一个错误消息
       flash.now[:danger] = 'Invalid email/password combination'
