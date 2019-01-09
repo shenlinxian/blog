@@ -1,14 +1,20 @@
 SampleApp::Application.routes.draw do
   resources :articals
 
+  get "/users/search", to: 'users#search'
   resources :users do
     member do
       get :following, :followers
     end
   end
+
+
+
+
   resources :sessions,      only: [:new, :create, :destroy]
   resources :relationships, only: [:create, :destroy]
   root to: 'articals#index'
+
 
 
   match '/signup',  to: 'users#new',            via: 'get'

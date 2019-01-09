@@ -24,9 +24,9 @@ class UsersController < ApplicationController
 
   def show
     # params[:id] 会返回用户的 ID
-    puts("...")
-
     @user = User.find(params[:id])
+
+    @articals=Artical.paginate_by_sql("select * from articals where user="+params[:id], page: params[:page])
 
 
 
