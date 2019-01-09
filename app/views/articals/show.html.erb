@@ -1,76 +1,7 @@
-<style type="text/css">
-
-  /*给最外层div一个宽度并给一个边框，边框粗细为1个像素，边框颜色为灰色 上边距离为50个像素居中显示内边距为20个像素*/
-
-  .out{width: 500px; border: 1px solid #999; margin: 50px auto; padding: 20px;}
-
-  /*.out{width: 500个像素; border:1个像素 solid 灰色; margin: 50个像素 自动; padding: 20个像素;}*/
-
-  .out .btn{cursor: pointer; display: inline-block; margin-bottom: 50px;}
-
-  /* 给外层div下btn上边框对齐，display: inline-block;水平排列，下边距50个像素*/
-
-  .out .row{border-bottom: 1px solid #ccc;}
-
-  /*下边框粗细为1个像素，颜色为灰色*/
-
-  .out .btn i{display: inline-block; width: 20px; height: 20px; background:url(img/zan.png); margin-right: 6px; vertical-align: middle;}
-
-  /*水平排列 宽度20个像素高度20个像素，background:url(img/zan.png);背景图片margin-right: 6px; 距离右边6个像素 vertical-align: middle;上边框对齐*/
-
-  .out .btn.on i{background-image: url(img/zan-h.png);}
-
-  /*当js事件将div class改变执行.out .btn.on i{background-image: url(img/zan-h.png);} background-image: url(img/zan-h.png);改变背景图片*/
-
-  .out .btn b{vertical-align: middle;}
-
-  /* 上边框对齐*/
-
-</style>
-
-<script type="text/javascript">
-
-    $(function(){
-
-        /*建立一个函数*/
-
-        $(".btn").click(function(){
-
-            /*获取到id执行点击事件*/
-
-            if ($(this).attr("data-key")=="on") {
-
-                $(this).addClass("on");
-
-                var num=Number($(this).find("b").html())+1;
-
-                /*给变量赋值当.btn点击执行b标签内容=+1*/
-
-                $(this).find("b").html(num);
-
-                $(this).attr("data-key","")
-
-            }else{
-
-                $(this).removeClass("on");
-
-                var num=Number($(this).find("b").html())-1;
-
-                $(this).attr("data-key","on");
-
-            }
-
-        })
-
-</script>
-
 <div>
   <div>
     <h1> <%=@artical.title %></h1>
   </div>
-
-
-
   <div style="width: 900px;margin-top: 20px">
         <%=@artical.content %>
   </div>
@@ -89,17 +20,12 @@
 
 
 
+      <div class="btn" data-key="on">
 
+        <b id="thumb_up_css">&#10084;</b>
+        <span><%=@artical.thumber_up_number %></span>
 
-
-      <span class>
-        <svg class="icon icon-comment">
-          <use class="" xlink:href="#thumb_up">
-          </use>
-        </svg>
-        <%=@artical.thumber_up_number %>
-      </span>
-
+      </div>
 
 
     </div>
@@ -110,8 +36,6 @@
 </div>
 
 
-<script src="js/mo.min.js"></script>
-<script src="js/demo.js"></script>
 
 
 
