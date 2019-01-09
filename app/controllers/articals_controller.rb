@@ -10,6 +10,8 @@ class ArticalsController < ApplicationController
   # GET /articals/1
   # GET /articals/1.json
   def show
+    @artical.read_number +=1
+    @artical.save
   end
 
   # GET /articals/new

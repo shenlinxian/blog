@@ -11,15 +11,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190107122828) do
+ActiveRecord::Schema.define(version: 20190107124823) do
 
-  create_table "articals", force: true do |t|
+  create_table "_articals_old_20190107", force: true do |t|
     t.string   "title"
     t.string   "category"
     t.string   "content"
     t.integer  "user"
     t.integer  "read_number"
     t.integer  "thumber_up_number"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "_articals_old_20190107_1", force: true do |t|
+    t.string   "title"
+    t.string   "category"
+    t.string   "content"
+    t.integer  "user"
+    t.integer  "read_number",       default: 0
+    t.integer  "thumber_up_number"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "articals", force: true do |t|
+    t.string   "title"
+    t.string   "category"
+    t.string   "content"
+    t.integer  "user"
+    t.integer  "read_number",       default: 0
+    t.integer  "thumber_up_number", default: 0
     t.datetime "created_at"
     t.datetime "updated_at"
   end
