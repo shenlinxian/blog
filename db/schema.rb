@@ -61,14 +61,14 @@ ActiveRecord::Schema.define(version: 20190109161436) do
 
   create_table "replies", force: true do |t|
     t.integer  "user_id"
-    t.integer  "article_id"
+    t.integer  "artical_id"
     t.text     "content"
     t.integer  "thumber_up_number"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "replies", ["article_id"], name: "index_replies_on_article_id"
+  add_index "replies", ["artical_id"], name: "index_replies_on_artical_id"
   add_index "replies", ["user_id"], name: "index_replies_on_user_id"
 
   create_table "users", force: true do |t|

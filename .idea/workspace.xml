@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c81618a5-296d-4ecb-9c0d-31649eb61bf2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/articals/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articals/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/development.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db/development.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/development.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/13fe41fee1fe35b49d145bcc06610705" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/13fe41fee1fe35b49d145bcc06610705" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/2f5173deea6c795b8fdde723bb4b63af" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/2f5173deea6c795b8fdde723bb4b63af" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/d6c7ce3ac277094b04690a43947ede22" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/d6c7ce3ac277094b04690a43947ede22" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/d771ace226fc8215a3572e0aa35bb0d6" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/d771ace226fc8215a3572e0aa35bb0d6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/edbf63d87f211c17de329b8a471a7caf" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/edbf63d87f211c17de329b8a471a7caf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/f7cbd26ba1d28d48de824f0e94586655" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/f7cbd26ba1d28d48de824f0e94586655" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/pids/server.pid" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/pids/server.pid" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -133,7 +140,7 @@
           <entry key="Gemfile" value="3" />
           <entry key="coffee" value="57" />
           <entry key="css" value="2" />
-          <entry key="erb" value="747" />
+          <entry key="erb" value="748" />
           <entry key="html" value="3" />
           <entry key="js" value="4" />
           <entry key="md" value="3" />
@@ -148,7 +155,7 @@
           <entry key="HTML" value="3" />
           <entry key="JavaScript" value="4" />
           <entry key="Markdown" value="3" />
-          <entry key="RHTML" value="747" />
+          <entry key="RHTML" value="748" />
           <entry key="Ruby" value="495" />
           <entry key="SCSS" value="38" />
         </counts>
@@ -177,8 +184,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/articals/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+            <state relative-caret-position="570">
+              <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -187,7 +194,7 @@
         <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="362">
-              <caret line="41" column="48" lean-forward="true" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+              <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -254,7 +261,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>will_paginate</find>
       <find>passages</find>
       <find>@feed_items</find>
       <find>icon-comment</find>
@@ -284,6 +290,7 @@
       <find>data.error !== 0</find>
       <find>!== 0</find>
       <find>.content</find>
+      <find>content</find>
     </findStrings>
     <replaceStrings>
       <replace>passages</replace>
@@ -587,12 +594,12 @@
       <workItem from="1546746319022" duration="24891000" />
       <workItem from="1546849645120" duration="2699000" />
       <workItem from="1546952823007" duration="19104000" />
-      <workItem from="1547040631057" duration="963000" />
+      <workItem from="1547040631057" duration="1263000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70480000" />
+    <option name="totallyTimeSpent" value="70780000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -855,14 +862,14 @@
     <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
-          <caret line="41" column="48" lean-forward="true" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+          <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/articals/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        <state relative-caret-position="570">
+          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
         </state>
       </provider>
     </entry>
