@@ -30,6 +30,31 @@
 
 
   </div>
+  
+  <h2> here are replies</h2>
+  <%@replies.each do |reply| %>
+    <div class="article-list-item">
+      <div class="list-item-title">
+        <p class="article-list-item-txt">
+          <span > <%=reply.content %> </span>
+          <% if current_user?(User.find(reply.user)) or current_user.admin? %>
+            <span><a href=<%="/replies/"+reply.id.to_s+"/edit" %>>edit</a> </span>
+            <span><%= link_to "delete", reply, method: :delete, 
+                                                 data: { confirm: "are you sure?" } %></span>
+          <%end%>
+        </p>
+      </div>
+
+      <div class="article-list-item-info">
+        <div class="item-info-left">
+          <span> <%=User.find(reply.user).name %> </span>
+          <span> <%=reply.created_at %></span>
+          <span> <%=reply.updated_at %></span>
+        </div>
+
+      </div>
+    </div>
+  <% end %>
 
 </div>
 
