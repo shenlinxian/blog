@@ -23,5 +23,12 @@ SampleApp::Application.routes.draw do
 
 
   #get '/' => 'passages#index'
+  
+  resources :articals do
+    resources :replies
+  end
+  
+  resources :replies
+    
 
 end

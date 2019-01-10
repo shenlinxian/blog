@@ -12,12 +12,17 @@ class ArticalsController < ApplicationController
   def show
     @artical.read_number +=1
     @artical.save
+    
+    @replies = @artical.replies
+    
+#    @replies = Reply.paginate_by_sql("select * from replies where article_id ="+ @artical.id.to_s() ,page: params[:page])
   end
 
   # GET /articals/new
   def new
     @artical = Artical.new
 
+    @replies = Reply.new
   end
 
   # GET /articals/1/edit

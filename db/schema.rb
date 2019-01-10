@@ -11,29 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190109070458) do
-
-  create_table "_articals_old_20190107", force: true do |t|
-    t.string   "title"
-    t.string   "category"
-    t.string   "content"
-    t.integer  "user"
-    t.integer  "read_number"
-    t.integer  "thumber_up_number"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "_articals_old_20190107_1", force: true do |t|
-    t.string   "title"
-    t.string   "category"
-    t.string   "content"
-    t.integer  "user"
-    t.integer  "read_number",       default: 0
-    t.integer  "thumber_up_number"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(version: 20190109161436) do
 
   create_table "articals", force: true do |t|
     t.string   "title"
@@ -80,6 +58,18 @@ ActiveRecord::Schema.define(version: 20190109070458) do
   add_index "relationships", ["followed_id"], name: "index_relationships_on_followed_id"
   add_index "relationships", ["follower_id", "followed_id"], name: "index_relationships_on_follower_id_and_followed_id", unique: true
   add_index "relationships", ["follower_id"], name: "index_relationships_on_follower_id"
+
+  create_table "replies", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "article_id"
+    t.text     "content"
+    t.integer  "thumber_up_number"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "replies", ["article_id"], name: "index_replies_on_article_id"
+  add_index "replies", ["user_id"], name: "index_replies_on_user_id"
 
   create_table "users", force: true do |t|
     t.string   "name"
