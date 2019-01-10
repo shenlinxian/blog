@@ -88,4 +88,10 @@ module SessionsHelper
   def store_location
     session[:forwarding_url] = request.url if request.get?
   end
+  
+  #判断当前用户是否为管理员
+#  def current_user_admin?
+ #   @current_user = current_user
+#    1 == @current_user.admin
+#  end
 end
