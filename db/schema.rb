@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190109161436) do
+ActiveRecord::Schema.define(version: 20190111113438) do
 
   create_table "articals", force: true do |t|
     t.string   "title"
@@ -20,6 +20,13 @@ ActiveRecord::Schema.define(version: 20190109161436) do
     t.integer  "user"
     t.integer  "read_number",       default: 0
     t.integer  "thumber_up_number", default: 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "comments", force: true do |t|
+    t.string   "name"
+    t.text     "comment"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
